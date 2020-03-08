@@ -23,6 +23,6 @@ for record in currency.items():
     cur.setdefault(record[0], (record[1]['Value'] / record[1]['Nominal']))
 for record in cur:
     if record is min(cur.keys()):
-        print(colored(record, 'red',))
+        print(colored(record, 'red',), end=' ')
     else:
-        print(record)
+        print(record, end=' ')
